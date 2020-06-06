@@ -1,0 +1,26 @@
+
+
+.title{
+  background-color: #E9967A;
+  text-align: center;
+  font-size: 3.5rem;
+  color : #B22222;
+  padding : 7% 15%;
+}
+
+
+.time_display{
+  background-color: #E6E6FA;
+  padding : 5% 45%;
+  color : #00008B;
+  font-size : 3rem;
+}
+
+.footer{
+
+background-color: #BDB76B;
+padding : 5% 15%;
+color : black;
+text-align: center;
+font-family : cursive;
+}

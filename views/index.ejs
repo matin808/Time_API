@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Date And Time</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  </head>
+  <body>
+
+<div class="header">
+
+  <h3 class = "title">Dynamic Date And Time</h3>
+
+</div>
+
+
+<div class="time_display" id = "display">
+
+</div>
+
+
+  <script type="text/javascript">
+
+    setInterval(function(){
+
+      function getTime(){
+
+
+          var today = new Date();
+
+          var date = today.getDate() + '/' + today.getMonth() + '/' + today.getFullYear();
+
+          var time = today.getHours() + ':' + today.getMinutes() + ':' +today.getSeconds();
+
+          var dateTime = date + '  ' + time;
+
+          return dateTime;
+      };
+        currentTime = getTime();
+
+        document.getElementById("display").innerHTML = currentTime;
+    });
+
+  </script>
+
+
+  <div class="footer">
+
+     <h1 class="display-4">By Abdul Matin Kadri</h1>
+     <p class="lead">Assignment provided by cloud Counselage.</p>
+
+  </div>
+
+
+  </body>
+</html>
